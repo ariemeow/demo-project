@@ -19,7 +19,7 @@
 // const d = document;
 // document.addEventListener("DOMContentLoaded", function(event) {
 
-    const swalWithBootstrapButtons = Swal.mixin({
+    Swal.mixin({
         customClass: {
             confirmButton: 'btn btn-primary me-3',
             cancelButton: 'btn btn-gray'
@@ -60,15 +60,18 @@
     }
 
     // options
-    const breakpoints = {
-        sm: 540,
-        md: 720,
-        lg: 960,
-        xl: 1140
-    };
+    function breakpoints(){
+
+        return {
+            sm: 540,
+            md: 720,
+            lg: 960,
+            xl: 1140
+        };
+    }
 
     var sidebar = document.getElementById('sidebarMenu')
-    if(sidebar && document.body.clientWidth < breakpoints.lg) {
+    if(sidebar && document.body.clientWidth < breakpoints().lg) {
         sidebar.addEventListener('shown.bs.collapse', function () {
             document.querySelector('body').style.position = 'fixed';
         });
@@ -89,7 +92,7 @@
     });
 
     [].slice.call(document.querySelectorAll('[data-background-lg]')).map(function(el) {
-        if(document.body.clientWidth > breakpoints.lg) {
+        if(document.body.clientWidth > breakpoints().lg) {
             el.style.background = 'url(' + el.getAttribute('data-background-lg') + ')';
         }
     });
