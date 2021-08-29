@@ -1,2 +1,63 @@
-<h1 class="display-1">Region Management</h1>
-<p class="mb-0">The content still blanks</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+    <div class="d-block mb-4 mb-md-0">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="/dashboard">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Management</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Region</li>
+            </ol>
+        </nav>
+        <h2 class="h4">Region</h2>
+    </div>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="#" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+            <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+            New Region
+        </a>
+        <!-- <div class="btn-group ms-2 ms-lg-3">
+            <button type="button" class="btn btn-sm btn-outline-gray-600">Send</button>
+            <button type="button" class="btn btn-sm btn-outline-gray-600">Request</button>
+        </div> -->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <!-- Tab -->
+        <nav>
+            <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-list-tab" data-bs-toggle="tab" href="#nav-list" role="tab" aria-controls="nav-list" aria-selected="true">
+                    <svg class="icon icon-xs me-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                    List
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab">
+                
+                <div class="table-responsive">
+                    <table class="table table-centered table-nowrap mb-0 rounded">
+                        <thead class="thead-light">
+                            <tr>
+                                <th class="border-0 rounded-start">Parent</th>
+                                <th class="border-0">Name</th>
+                                <th class="border-0">Coordinates</th>
+                                <th class="border-0 rounded-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" class="text-center">No Data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End of tab -->
+    </div>
+</div>

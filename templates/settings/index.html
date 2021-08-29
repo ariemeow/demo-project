@@ -1,2 +1,34 @@
-<h1 class="display-1">Settings</h1>
-<p class="mb-0">The content still blanks</p>
+<h1 class="display-4 mb-4">Settings</h1>
+<div class="row">
+    <div class="col-12">
+        <!-- Tab -->
+        <nav>
+            <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-general-tab" data-bs-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">
+                    <svg class="icon icon-xs me-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    General
+                </a>
+                <a class="nav-item nav-link" id="nav-security-tab" data-bs-toggle="tab" href="#nav-security" role="tab" aria-controls="nav-security" aria-selected="false">
+                    <svg class="icon icon-xs me-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Security Question
+                </a>
+                <a class="nav-item nav-link" id="nav-pin-tab" data-bs-toggle="tab" href="#nav-pin" role="tab" aria-controls="nav-pin" aria-selected="false">
+                    <svg class="icon icon-xs me-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    PIN
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
+                <p>General</p>
+            </div>
+            <div class="tab-pane fade" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab">
+                <p>Security Question</p>
+            </div>
+            <div class="tab-pane fade" id="nav-pin" role="tabpanel" aria-labelledby="nav-pin-tab">
+                <p>PIN</p>
+            </div>
+        </div>
+        <!-- End of tab -->
+    </div>
+</div>
